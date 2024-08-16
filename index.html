@@ -7,20 +7,90 @@
 </head>
 <body>
     <script>
+        
         //js always be written in script tags
-        let a=20; // "let" used in latest js versions
-        let b='this ex of console output'
-        console.log(b);
-        console.log('let_ex=',a); // use to output on console window
 
-        var c=10;  //'var' used in old js versions
-        console.log('var_ex=',c);
+        'use strict'; // if u make error in typing make any syntax error it will show on console
+        
+        let a=20 + 2; // "let" used in latest js versions
+
+        console.log('let_ex=',a); // use to output on console window
+        // let b='this ex of console output'
+        // console.log(b);
+       
+
+        // var c=10;  //'var' used in old js versions
+        // console.log('var_ex=',c);
 
         
-        const d=25; // 'const' use for constant values
-        console.log('const_ex',d);
+        // const d=25; // 'const' use for constant values
+        // console.log('const_ex',d);
+
+        /*  data types used in js:
+        Number 
+        Object 
+        Boolean- true or false
+        String
+        undefined
+        null
+        */
+
+        function hello(){
+            console.log("Hey Mujjo");
+            // to print the output of this just call the name of funct in inpect-console-> hello()
+        }
+        let obja = {
+            r: 23,
+            m: 12,
+            
+            // call it obja.r to print val of r same for val of m in console
+
+            // func: function myfunc(number){
+            //     console.log("This num is "+ number);
+                // function myfunc(number){} is a function
+                // call obja.func(26) in console to use func from console of browser
+
+            //}
+            // this work as dictionary
+        }
+        document.addEventListener("click", function click(){
+             // document.addEventListener  use to add event whenever user do operation with main page of web browser
+             // "click" this event will be executed when user click on any area of page
+        
+            console.log("clicked");
+            //alert("hello");
+            // alert("hello"); it create a pop up window like alert when the event executed
+      
+            let conf = confirm("are u sure?");
+            console.log(conf);
+            // confirm("are u sure?"); is like alert but it ask usr with dedicated msg eritten in it it gives 2 options ok & cancel and val will be in true or false resp.
+        })
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        // }
+        console.log(this);
+
+        let arr =[10,20,30];// can use array
+    //     function myfunc(number){
+    //         console.log(" This no is "+ this)
+    //    }
+        let  myfunc = (number)=> {
+            console.log(" This no is "+ this)
+            //can use this keyword many times
+       }
+       myfunc();
+
+       setTimeout(() => {
+
+        // callback me ka settimeout() use to give some tast after some time
+        console.log("wow");
+        
+       }, 3000);//3 sec
+       console.log('mai niche wali script hu');
 
 
+        
 
         
         
@@ -28,6 +98,10 @@
     </script>
     
 </body>
-hello this is 1st pgm of js
+<h1>
+    hello this is 1st pgm of js
+</h1>
+
+
 
 </html>
